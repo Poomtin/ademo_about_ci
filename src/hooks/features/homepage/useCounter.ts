@@ -5,7 +5,7 @@ export default function useCounter() {
   const [val, setVal] = useState(1);
 
   function increment() {
-    setCount((count) => count + val);
+    setCount((prev) => prev + val);
   }
 
   return { count, increment, val, setVal };
